@@ -5,7 +5,7 @@ import Head from "next/head";
 import Header from './components/Header'
 import '@/public/assets/styles/tailwind.min.css'
 import '@/public/assets/styles/app.min.css'
-
+import Footer from './components/Footer'
 
 
 
@@ -31,6 +31,7 @@ export default function RootLayout({
         <NextUIProvider>
           <Header />
             {children}
+          <Footer/>
         </NextUIProvider>
       </body>
     </html>
