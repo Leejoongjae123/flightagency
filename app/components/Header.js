@@ -1,12 +1,12 @@
 import React from "react";
 import Script from "next/script";
-import Link from "next/link"
-import Head from "next/head";
+import Link from "next/link";
+import { Button } from "@nextui-org/react";
 
 function Header() {
   return (
     <>
-      <header class="h-auto full-width relative py-[15px] first-letter:lg:py-[26px]">
+      <header class="h-auto full-width relative py-[15px] first-letter:lg:py-[26px] ">
         <div class="px-[12px] md:px-[36px] mt-[70px] xl:px-0 flex items-center justify-between mx-auto relative !mt-0 max-w-[1320px]">
           <a class="flex" href="/">
             <img
@@ -24,8 +24,6 @@ function Header() {
                 >
                   홈
                 </a>
-                
-                
               </li>
               <li class="flex items-center group">
                 <a
@@ -94,7 +92,6 @@ function Header() {
                       class="flex items-center text-[14px]"
                       href="/about-3.html"
                     >
-
                       <span class="whitespace-nowrap">오시는길</span>
                     </a>
                   </li>
@@ -134,7 +131,6 @@ function Header() {
                       class="flex items-center text-[14px]"
                       href="/services-2.html"
                     >
-
                       <span class="whitespace-nowrap">입학생 사전교육</span>
                     </a>
                   </li>
@@ -164,8 +160,6 @@ function Header() {
                   <li class="hr px-[22px]">
                     <span class="block bg-gray-100 w-full h-[1px] my-[5px]"></span>
                   </li>
-                  
-                  
                 </ul>
               </li>
               <li class="flex items-center group">
@@ -212,7 +206,7 @@ function Header() {
                   class="hover:text-green-900 text-base font-inter menu-link lg:text-heading-6 mr-[7px] font-bold"
                   href="/"
                 >
-                   준사관 취업
+                  준사관 취업
                 </a>
                 <i>
                   <img
@@ -280,12 +274,7 @@ function Header() {
                       class="flex items-center text-[14px]"
                       href="/shop-1.html"
                     >
-                      <img
-                        class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
-                        src="./assets/images/icons/icon-edit.svg"
-                        alt=""
-                      />
-                      <span class="whitespace-nowrap">Shop 01</span>
+                      <span class="whitespace-nowrap">입학설명회</span>
                     </a>
                   </li>
                   <li
@@ -296,28 +285,7 @@ function Header() {
                       class="flex items-center text-[14px]"
                       href="/shop-2.html"
                     >
-                      <img
-                        class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
-                        src="./assets/images/icons/icon-edit.svg"
-                        alt=""
-                      />
-                      <span class="whitespace-nowrap">Shop 02</span>
-                    </a>
-                  </li>
-                  <li
-                    class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
-                    data-menu="product"
-                  >
-                    <a
-                      class="flex items-center text-[14px]"
-                      href="/single-product.html"
-                    >
-                      <img
-                        class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
-                        src="./assets/images/icons/icon-edit.svg"
-                        alt=""
-                      />
-                      <span class="whitespace-nowrap">Product Details</span>
+                      <span class="whitespace-nowrap">설명회 예약</span>
                     </a>
                   </li>
                 </ul>
@@ -345,12 +313,7 @@ function Header() {
                       class="flex items-center text-[14px]"
                       href="/shop-1.html"
                     >
-                      <img
-                        class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
-                        src="./assets/images/icons/icon-edit.svg"
-                        alt=""
-                      />
-                      <span class="whitespace-nowrap">Shop 01</span>
+                      <span class="whitespace-nowrap">공지사항</span>
                     </a>
                   </li>
                   <li
@@ -361,12 +324,7 @@ function Header() {
                       class="flex items-center text-[14px]"
                       href="/shop-2.html"
                     >
-                      <img
-                        class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
-                        src="./assets/images/icons/icon-edit.svg"
-                        alt=""
-                      />
-                      <span class="whitespace-nowrap">Shop 02</span>
+                      <span class="whitespace-nowrap">항공NEWS</span>
                     </a>
                   </li>
                   <li
@@ -377,21 +335,38 @@ function Header() {
                       class="flex items-center text-[14px]"
                       href="/single-product.html"
                     >
-                      <img
-                        class="opacity-40 w-[12px] h-[12px] mr-[8px] -translate-y-[1px]"
-                        src="./assets/images/icons/icon-edit.svg"
-                        alt=""
-                      />
-                      <span class="whitespace-nowrap">Product Details</span>
+                      <span class="whitespace-nowrap">방문상담신청</span>
+                    </a>
+                  </li>
+                  <li
+                    class="menu-child-item font-chivo group transition-all duration-200 py-[10px] px-[22px] hover:filter-green hover:pl-[25px] hover:opacity-100"
+                    data-menu="product"
+                  >
+                    <a
+                      class="flex items-center text-[14px]"
+                      href="/single-product.html"
+                    >
+                      <span class="whitespace-nowrap">FAQ</span>
                     </a>
                   </li>
                 </ul>
               </li>
             </ul>
           </nav>
-
+          <div className="hidden md:block z-50">
+            <button type="button">
+              <a
+                class="flex items-center inline-block z-10 relative transition-all duration-200 group rounded-[50px] bg-gray-100 text-gray-900 hover:bg-gray-900 hover:text-white hover:-translate-y-[2px] px-5 py-3 "
+                href="#"
+              >
+                <span class="block text-inherit w-full h-full rounded-[50px] text-heading-6 font-bold font-chivo">
+                  로그인
+                </span>
+              </a>
+            </button>
+          </div>
         </div>
-        <div class="burger-icon burger-icon-white menu__icon">
+        <div class="burger-icon burger-icon-white menu__icon md:hidden">
           <span class="burger-icon-top"></span>
           <span class="burger-icon-mid"> </span>
           <span class="burger-icon-bottom"></span>
