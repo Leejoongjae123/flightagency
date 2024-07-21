@@ -1,5 +1,14 @@
 import { GeistSans } from "geist/font/sans";
 import "./globals.css";
+import { NextUIProvider } from "@nextui-org/react";
+import Head from "next/head";
+import Header from './components/Header'
+import '@/public/assets/styles/tailwind.min.css'
+import '@/public/assets/styles/app.min.css'
+
+
+
+
 
 const defaultUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
@@ -18,10 +27,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={GeistSans.className}>
-      <body className="bg-background text-foreground">
-        <main className="min-h-screen flex flex-col items-center">
-          {children}
-        </main>
+      <body className="overflow-x-hidden w-screen relative home-page">
+        <NextUIProvider>
+          <Header />
+            {children}
+        </NextUIProvider>
       </body>
     </html>
   );
