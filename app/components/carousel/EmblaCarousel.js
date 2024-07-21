@@ -24,14 +24,13 @@ const EmblaCarousel = (props) => {
                     objectFit="cover"
                     alt="Picture of the author"
                   />
-                  <div className="z-50 absolute top-5 left-5 w-full h-full ">
-                    <div class="flex flex-col w-2/3 p-20 text-white">
+                  <div className="z-50 absolute bottom-0 right-0 w-full h-full ">
+                    <div class="flex flex-col w-full h-full text-white justify-center items-center">
                       <h1 class="font-chivo font-bold lg:text-display-2 md:text-[64px] md:leading-[70px] sm:text-[50px] sm:leading-[58px] text-[40px] leading-[48px] mb-[40px]">
-                        We are supporters for your business dream
+                        UND 글로벌 항공 교육원
                       </h1>
-                      <p class="text-white md:text-lead-lg text-gray-500 pr-[40px] lg:pr-[60px] mb-[40px]">
-                        Integrated workflow designed for product teams. We
-                        create world-class development and branding
+                      <p class="text-white md:text- pr-[40px] lg:pr-[60px]">
+                        aviation program
                       </p>
                       <div class="flex items-center justify-start"></div>
                     </div>

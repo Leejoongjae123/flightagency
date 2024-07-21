@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="wrapper mx-auto text-gray-900 font-normal max-w-[1320px]">
+    <div className="wrapper mx-auto text-gray-900 font-normal max-w-[1320px] ">
     <footer className="mt-[92px] lg:mt-[150px] xl:mt-[200px] mb-[30px]">
       <div className="px-[12px] md:px-[36px] mt-[70px] xl:px-0">
         <div className="flex flex-col items-center gap-2 mb-14 md:flex-row md:justify-between">
